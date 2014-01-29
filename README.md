@@ -1,6 +1,8 @@
 grunt-saucelabs-junit
 =====================
 
+Grunt task that converts saucelabs json report to junit xml report
+
 Usage example: 
 
 Content of 'gruntfile.js'
