@@ -1,0 +1,19 @@
+{
+    "name": "Dell-Migration-Platform",
+    "version": "0.1.0",
+    "private": true,
+"scripts": {
+    "start": "grunt",
+    "test": "grunt test --force"
+  },
+    "dependencies":
+    {
+        "express": "*"
+    },
+    "devDependencies":
+    {
+        "grunt": "*",
+        "grunt-cli": "*",
+        "grunt-saucelabs": "*"
+    }
+}
