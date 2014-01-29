@@ -1,6 +1,6 @@
 {
     "name": "grunt-saucelabs-junit",
-    "description": "Grunt task that converts saucelabs json report to junit xml report"
+    "description": "Grunt task that converts saucelabs json report to junit xml report",
     "version": "0.1.0",
     "dependencies": {
     },
