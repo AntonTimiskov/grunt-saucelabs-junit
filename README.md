@@ -23,5 +23,5 @@ Content of 'gruntfile.js'
       grunt.loadNpmTasks('grunt-saucelabs-junit');
       
       grunt.registerTask('default', ['saucelabs-junit']);
-  
-}
+      
+    }
