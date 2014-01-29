@@ -1,19 +1,15 @@
 {
-    "name": "Dell-Migration-Platform",
+    "name": "grunt-saucelabs-junit",
+    "description": "Grunt task that converts saucelabs json report to junit xml report"
     "version": "0.1.0",
-    "private": true,
-"scripts": {
-    "start": "grunt",
-    "test": "grunt test --force"
-  },
-    "dependencies":
-    {
-        "express": "*"
+    "dependencies": {
     },
-    "devDependencies":
-    {
-        "grunt": "*",
-        "grunt-cli": "*",
-        "grunt-saucelabs": "*"
-    }
+    "devDependencies": {
+    },
+    "keywords": [
+        "gruntplugin",
+        "grunt",
+        "saucelabs",
+        "jasmine"
+  ]
 }
