@@ -3,7 +3,7 @@ grunt-saucelabs-junit
 
 Usage example: 
 
-    // content of 'gruntfile.js'
+Content of 'gruntfile.js'
     
     
     module.exports = function(grunt) {
