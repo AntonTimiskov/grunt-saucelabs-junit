@@ -1,6 +1,6 @@
 var jsonfile2junitreport = function (grunt, saucelabsReportFilename, junitFilename){
     var _ = grunt.util._;
-    var xml = '';
+    var xml = '<?xml version="1.0" encoding="UTF-8" ?>';
 
     function aggregate(suite, spec, name){
 
@@ -57,13 +57,13 @@ var jsonfile2junitreport = function (grunt, saucelabsReportFilename, junitFilena
     
     if ( suite.specs ){
 
-          xml += '<testsuite failures="'+suite.failedCount+'" name="'+suite.description+'" tests="'+suite.totalCount+'" time="'+suite.durationSec+'">';
+          xml += '<testsuite failures="'+suite.failedCount+'" name="'+suite.description.replace(/"/g,"'")+'" tests="'+suite.totalCount+'" time="'+suite.durationSec+'">';
 
           _.each( suite.specs, function(spec){
-            xml += '<testcase assertions="'+spec.totalCount+'" name="'+spec.description+'" time="'+spec.durationSec+'">';
+            xml += '<testcase assertions="'+spec.totalCount+'" name="'+spec.description.replace(/"/g,"'")+'" time="'+spec.durationSec+'">';
 
             _.each( spec.failures, function(fail){
-	            xml += '<failure message="'+fail.message+'" type="'+fail.type+'"/>';
+	            xml += '<failure message="'+fail.message.replace(/"/g,"'")+'" type="'+fail.type+'"/>';
             });
 
             xml += '</testcase>'; 
